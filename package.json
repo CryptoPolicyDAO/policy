@@ -110,7 +110,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-tailwindcss": "^3.14.2",
     "postcss": "^8.4.35",
-    "prettier": "^3.2.5",
+    "prettier": "^2.0.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "supabase": "^1.142.2",
     "mdast-util-toc": "^6.1.1",
@@ -127,8 +127,8 @@
     "rehype-slug": "^5.1.0",
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
-    "tailwindcss": "^3.3.1",
-    "typescript": "4.7.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "4.9.5",
     "unist-util-visit": "^4.1.2"
   }
 }
