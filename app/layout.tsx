@@ -7,6 +7,7 @@ import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 import '@/styles/globals.css';
 import { marketingConfig } from '@/config/marketing';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const meta = {
   title: 'Next.js Subscription Starter',
@@ -26,7 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
     authors: [
       { name: 'Crypto Policy DAO', url: 'https://CryptoPolicy.vercel.app/' }
     ],
-    creator: 'Vercel',
+      creator: "CryptoPolicyDAO",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
     publisher: 'Vercel',
     robots: meta.robots,
     icons: { icon: meta.favicon },
@@ -46,7 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: meta.title,
       description: meta.description,
       images: [meta.cardImage]
-    }
+    },
   };
 }
 
@@ -63,12 +68,14 @@ export default function RootLayout({ children }: PropsWithChildren) {
           id="skip"
           className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
         >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </main>
         <Footer />
         <Suspense>
           <Toaster />
         </Suspense>
+        <ThemeProvider />
       </body>
     </html>
   );
