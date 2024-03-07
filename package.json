@@ -95,7 +95,9 @@
     "react-textarea-autosize": "^8.4.1",
     "sharp": "^0.31.3",
     "shiki": "^0.11.1",
-    "zod": "^3.21.4"
+    "zod": "^3.21.4",
+    "@react-three/drei": "^9.99.5",
+    "nodemailer": "^6.9.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
