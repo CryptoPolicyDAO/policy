@@ -21,7 +21,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description: meta.description,
     referrer: 'origin-when-cross-origin',
     keywords: ['Vercel', 'Supabase', 'Next.js', 'Stripe', 'Subscription'],
-    authors: [{ name: 'Vercel', url: 'https://vercel.com/' }],
+    authors: [
+      { name: 'Crypto Policy DAO', url: 'https://CryptoPolicy.vercel.app/' }
+    ],
     creator: 'Vercel',
     publisher: 'Vercel',
     robots: meta.robots,
