@@ -19,6 +19,10 @@ module.exports = {
           publicPath: "images", // Public path for accessing the file in the browser
         },
       },
+        {
+        test: /\.node\.js$/,
+        loader: 'node-loader',
+      },
     ],
   },
   // Add any additional loaders or plugins you might need for your project
