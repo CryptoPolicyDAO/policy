@@ -6,121 +6,121 @@ settings:
 
 dependencies:
   '@editorjs/code':
-    specifier: ^2.9.0
+    specifier: ^2.8.0
     version: 2.9.0
   '@editorjs/editorjs':
-    specifier: ^2.29.0
+    specifier: ^2.26.5
     version: 2.29.0
   '@editorjs/embed':
-    specifier: ^2.7.0
+    specifier: ^2.5.3
     version: 2.7.0
   '@editorjs/header':
-    specifier: ^2.8.1
+    specifier: ^2.7.0
     version: 2.8.1
   '@editorjs/inline-code':
-    specifier: ^1.5.0
+    specifier: ^1.4.0
     version: 1.5.0
   '@editorjs/link':
-    specifier: ^2.6.2
+    specifier: ^2.5.0
     version: 2.6.2
   '@editorjs/list':
-    specifier: ^1.9.0
+    specifier: ^1.8.0
     version: 1.9.0
   '@editorjs/paragraph':
-    specifier: ^2.11.3
+    specifier: ^2.9.0
     version: 2.11.3
   '@editorjs/table':
-    specifier: ^2.3.0
+    specifier: ^2.2.1
     version: 2.3.0
   '@hookform/resolvers':
-    specifier: ^3.3.4
+    specifier: ^3.1.0
     version: 3.3.4(react-hook-form@7.51.0)
   '@radix-ui/react-accessible-icon':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-accordion':
-    specifier: ^1.1.2
+    specifier: ^1.1.1
     version: 1.1.2(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-alert-dialog':
-    specifier: ^1.0.5
+    specifier: ^1.0.3
     version: 1.0.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-aspect-ratio':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-avatar':
-    specifier: ^1.0.4
+    specifier: ^1.0.2
     version: 1.0.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-checkbox':
-    specifier: ^1.0.4
+    specifier: ^1.0.3
     version: 1.0.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-collapsible':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-context-menu':
-    specifier: ^2.1.5
+    specifier: ^2.1.3
     version: 2.1.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-dialog':
-    specifier: ^1.0.5
+    specifier: ^1.0.3
     version: 1.0.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-dropdown-menu':
-    specifier: ^2.0.6
+    specifier: ^2.0.4
     version: 2.0.6(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-hover-card':
-    specifier: ^1.0.7
+    specifier: ^1.0.5
     version: 1.0.7(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-label':
-    specifier: ^2.0.2
+    specifier: ^2.0.1
     version: 2.0.2(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-menubar':
-    specifier: ^1.0.4
+    specifier: ^1.0.2
     version: 1.0.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-navigation-menu':
-    specifier: ^1.1.4
+    specifier: ^1.1.2
     version: 1.1.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-popover':
-    specifier: ^1.0.7
+    specifier: ^1.0.5
     version: 1.0.7(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-progress':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-radio-group':
-    specifier: ^1.1.3
+    specifier: ^1.1.2
     version: 1.1.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-scroll-area':
-    specifier: ^1.0.5
+    specifier: ^1.0.3
     version: 1.0.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-select':
-    specifier: ^1.2.2
+    specifier: ^1.2.1
     version: 1.2.2(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-separator':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-slider':
-    specifier: ^1.1.2
+    specifier: ^1.1.1
     version: 1.1.2(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-slot':
-    specifier: ^1.0.2
+    specifier: ^1.0.1
     version: 1.0.2(@types/react@18.2.64)(react@18.2.0)
   '@radix-ui/react-switch':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-tabs':
-    specifier: ^1.0.4
+    specifier: ^1.0.3
     version: 1.0.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-toast':
     specifier: ^1.1.5
     version: 1.1.5(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-toggle':
-    specifier: ^1.0.3
+    specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-toggle-group':
-    specifier: ^1.0.4
+    specifier: ^1.0.3
     version: 1.0.4(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@radix-ui/react-tooltip':
-    specifier: ^1.0.7
+    specifier: ^1.0.5
     version: 1.0.7(@types/react-dom@18.2.21)(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   '@react-three/drei':
-    specifier: ^9.101.0
+    specifier: ^9.99.5
     version: 9.101.0(@react-three/fiber@8.15.19)(@types/react@18.2.64)(@types/three@0.162.0)(react-dom@18.2.0)(react@18.2.0)(three@0.162.0)
   '@stripe/stripe-js':
     specifier: 2.4.0
@@ -129,16 +129,16 @@ dependencies:
     specifier: ^0.1.0
     version: 0.1.0(@supabase/supabase-js@2.39.7)
   '@supabase/supabase-js':
-    specifier: ^2.39.7
+    specifier: ^2.39.3
     version: 2.39.7
   '@t3-oss/env-nextjs':
     specifier: ^0.2.2
     version: 0.2.2(zod@3.22.4)
   '@typescript-eslint/parser':
-    specifier: ^5.62.0
+    specifier: ^5.59.0
     version: 5.62.0(eslint@8.57.0)(typescript@4.9.5)
   '@vercel/analytics':
-    specifier: ^1.2.2
+    specifier: ^1.0.0
     version: 1.2.2(next@14.1.0)(react@18.2.0)
   '@vercel/og':
     specifier: ^0.0.21
@@ -156,13 +156,13 @@ dependencies:
     specifier: ^0.1.22
     version: 0.1.22(@types/react@18.2.64)(react-dom@18.2.0)(react@18.2.0)
   concurrently:
-    specifier: ^8.2.2
+    specifier: ^8.0.1
     version: 8.2.2
   contentlayer:
-    specifier: ^0.3.4
+    specifier: ^0.3.1
     version: 0.3.4(esbuild@0.20.1)
   date-fns:
-    specifier: ^2.30.0
+    specifier: ^2.29.3
     version: 2.30.0
   file-loader:
     specifier: ^6.2.0
@@ -174,13 +174,13 @@ dependencies:
     specifier: 14.1.0
     version: 14.1.0(@babel/core@7.24.0)(@opentelemetry/api@1.8.0)(react-dom@18.2.0)(react@18.2.0)
   next-contentlayer:
-    specifier: ^0.3.4
+    specifier: ^0.3.1
     version: 0.3.4(contentlayer@0.3.4)(esbuild@0.20.1)(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
   next-themes:
     specifier: ^0.2.1
     version: 0.2.1(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
   nodemailer:
-    specifier: ^6.9.11
+    specifier: ^6.9.1
     version: 6.9.11
   prop-types:
     specifier: ^15.8.1
@@ -189,7 +189,7 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0
   react-day-picker:
-    specifier: ^8.10.0
+    specifier: ^8.7.1
     version: 8.10.0(date-fns@2.30.0)(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
@@ -198,13 +198,13 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0(@editorjs/editorjs@2.29.0)(@editorjs/paragraph@2.11.3)(react@18.2.0)
   react-hook-form:
-    specifier: ^7.51.0
+    specifier: ^7.43.9
     version: 7.51.0(react@18.2.0)
   react-merge-refs:
     specifier: ^2.1.1
     version: 2.1.1
   react-textarea-autosize:
-    specifier: ^8.5.3
+    specifier: ^8.4.1
     version: 8.5.3(@types/react@18.2.64)(react@18.2.0)
   sharp:
     specifier: ^0.31.3
@@ -213,7 +213,7 @@ dependencies:
     specifier: ^0.11.1
     version: 0.11.1
   stripe:
-    specifier: ^14.19.0
+    specifier: ^14.16.0
     version: 14.19.0
   tailwind-merge:
     specifier: ^2.2.1
@@ -225,15 +225,15 @@ dependencies:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.4.1)
   zod:
-    specifier: ^3.22.4
+    specifier: ^3.21.4
     version: 3.22.4
 
 devDependencies:
   '@commitlint/cli':
-    specifier: ^17.8.1
+    specifier: ^17.6.1
     version: 17.8.1
   '@commitlint/config-conventional':
-    specifier: ^17.8.1
+    specifier: ^17.6.1
     version: 17.8.1
   '@ianvs/prettier-plugin-sort-imports':
     specifier: ^3.7.2
@@ -242,34 +242,34 @@ devDependencies:
     specifier: ^0.4.4
     version: 0.4.4(tailwindcss@3.4.1)
   '@tailwindcss/typography':
-    specifier: ^0.5.10
+    specifier: ^0.5.9
     version: 0.5.10(tailwindcss@3.4.1)
   '@types/node':
-    specifier: ^20.11.25
+    specifier: ^20.11.17
     version: 20.11.25
   '@types/react':
-    specifier: ^18.2.64
+    specifier: ^18.2.55
     version: 18.2.64
   '@types/react-dom':
-    specifier: ^18.2.21
+    specifier: ^18.2.19
     version: 18.2.21
   autoprefixer:
-    specifier: ^10.4.18
+    specifier: ^10.4.17
     version: 10.4.18(postcss@8.4.35)
   eslint:
-    specifier: ^8.57.0
+    specifier: ^8.39.0
     version: 8.57.0
   eslint-config-next:
     specifier: 13.0.0
     version: 13.0.0(eslint@8.57.0)(typescript@4.9.5)
   eslint-config-prettier:
-    specifier: ^8.10.0
+    specifier: ^8.8.0
     version: 8.10.0(eslint@8.57.0)
   eslint-plugin-react:
-    specifier: ^7.34.0
+    specifier: ^7.32.2
     version: 7.34.0(eslint@8.57.0)
   eslint-plugin-tailwindcss:
-    specifier: ^3.14.3
+    specifier: ^3.11.0
     version: 3.14.3(tailwindcss@3.4.1)
   husky:
     specifier: ^8.0.3
@@ -281,13 +281,13 @@ devDependencies:
     specifier: ^8.4.35
     version: 8.4.35
   prettier:
-    specifier: ^2.8.8
+    specifier: ^2.0.0
     version: 2.8.8
   prettier-plugin-tailwindcss:
-    specifier: ^0.4.1
+    specifier: ^0.4.0
     version: 0.4.1(@ianvs/prettier-plugin-sort-imports@3.7.2)(prettier@2.8.8)
   pretty-quick:
-    specifier: ^3.3.1
+    specifier: ^3.1.3
     version: 3.3.1(prettier@2.8.8)
   rehype:
     specifier: ^12.0.1
@@ -296,19 +296,19 @@ devDependencies:
     specifier: ^6.1.1
     version: 6.1.1
   rehype-pretty-code:
-    specifier: ^0.9.11
+    specifier: ^0.9.5
     version: 0.9.11(shiki@0.11.1)
   rehype-slug:
     specifier: ^5.1.0
     version: 5.1.0
   remark:
-    specifier: ^14.0.3
+    specifier: ^14.0.2
     version: 14.0.3
   remark-gfm:
     specifier: ^3.0.1
     version: 3.0.1
   supabase:
-    specifier: ^1.148.6
+    specifier: ^1.142.2
     version: 1.148.6
   typescript:
     specifier: 4.9.5
