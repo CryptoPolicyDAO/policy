@@ -7,7 +7,7 @@ const nextConfig = {
     domains: ['avatars.githubusercontent.com']
   },
   experimental: {
-    appDir: true
+    appDir: false
   },
   webpack: (config) => {
     config.module.rules.push({
