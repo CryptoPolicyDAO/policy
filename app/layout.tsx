@@ -53,8 +53,12 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
+      <header className=" z-40 bg-background container   ">
+        <div className="flex h-20 items-center justify-between py-6">
+          <MainNav items={marketingConfig.mainNav} />
+        </div>
+      </header>
       <body className="bg-black loading">
-        <MainNav items={marketingConfig.mainNav} />
         <main
           id="skip"
           className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
