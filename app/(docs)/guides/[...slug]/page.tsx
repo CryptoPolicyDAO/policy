@@ -21,16 +21,17 @@ interface GuidePageProps {
   }
 }
 
-async function getGuideFromParams(params) {
-  const slug = params?.slug?.join("/")
-  const guide = allGuides.find((guide) => guide.slugAsParams === slug)
+async function getGuideFromParams(params: GuidePageProps['params']) {
+  const slug = params?.slug?.join('/');
+  const guide = allGuides.find((guide) => guide.slugAsParams === slug);
 
   if (!guide) {
-    null
+    return null;
   }
 
-  return guide
+  return guide;
 }
+
 
 export async function generateMetadata({
   params,
