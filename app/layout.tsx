@@ -5,10 +5,7 @@ import { Toaster } from '@/components/ui/Toasts/toaster';
 import { PropsWithChildren, Suspense } from 'react';
 import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
-import { ThemeProvider } from '@/components/theme-provider';
-import { Analytics } from "@/components/analytics"
-import "@/styles/globals.css"
-
+import '@/styles/globals.css';
 
 const meta = {
   title: 'Next.js Subscription Starter',
@@ -55,22 +52,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-              
       <body className="bg-black loading">
         <Navbar />
         <main
           id="skip"
           className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
         >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </main>
         <Footer />
         <Suspense>
           <Toaster />
-          <Analytics />
         </Suspense>
-        </ThemeProvider>
       </body>
     </html>
   );
