@@ -6,9 +6,6 @@ const nextConfig = {
   images: {
     domains: ['avatars.githubusercontent.com']
   },
-  experimental: {
-    appDir: false
-  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(mp4)$/,
