@@ -7,6 +7,8 @@ import { getURL } from '@/utils/helpers';
 import 'styles/main.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Analytics } from "@/components/analytics"
+import "@/styles/globals.css"
+
 
 const meta = {
   title: 'Next.js Subscription Starter',
