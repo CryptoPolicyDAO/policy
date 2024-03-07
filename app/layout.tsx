@@ -27,11 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
     authors: [
       { name: 'Crypto Policy DAO', url: 'https://CryptoPolicy.vercel.app/' }
     ],
-      creator: "CryptoPolicyDAO",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+    creator: 'CryptoPolicyDAO',
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: 'white' },
+      { media: '(prefers-color-scheme: dark)', color: 'black' }
+    ],
     publisher: 'Vercel',
     robots: meta.robots,
     icons: { icon: meta.favicon },
@@ -51,13 +51,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: meta.title,
       description: meta.description,
       images: [meta.cardImage]
-    },
+    }
   };
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html lang="en">
+    <div>
       <header className=" z-40 bg-background container   ">
         <div className="flex h-20 items-center justify-between py-6">
           <MainNav items={marketingConfig.mainNav} />
@@ -69,14 +69,15 @@ export default function RootLayout({ children }: PropsWithChildren) {
           className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+            {children}
+
+            <Footer />
+            <Suspense>
+              <Toaster />
+            </Suspense>
+          </ThemeProvider>
         </main>
-        <Footer />
-        <Suspense>
-          <Toaster />
-        </Suspense>
-        <ThemeProvider />
       </body>
-    </html>
+    </div>
   );
 }
