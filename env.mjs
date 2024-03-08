@@ -21,8 +21,7 @@ export const env = createEnv({
     POSTGRES_HOST: z.string().min(1),
     SUPABASE_ANON_KEY: z.string().min(1),
     POSTGRES_DATABASE: z.string().min(1),
-    NEXT_PUBLIC_APP_URL: z.string().min(1),
-    STRIPE_PRO_MONTHLY_PLAN_ID: z.string().min(1)
+    NEXT_PUBLIC_APP_URL: z.string().min(1)
   },
   client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1)
@@ -44,7 +43,6 @@ export const env = createEnv({
     POSTGRES_HOST: process.env.POSTGRES_HOST,
     SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY,
     POSTGRES_DATABASE: process.env.POSTGRES_DATABASE,
-    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
-    STRIPE_PRO_MONTHLY_PLAN_ID: process.env.STRIPE_PRO_MONTHLY_PLAN_ID
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL
   }
 });
