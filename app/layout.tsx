@@ -1,83 +1,86 @@
-import { Metadata } from 'next';
-import Footer from '@/components/ui/Footer';
-import { MainNav } from '@/components/main-nav';
-import { Toaster } from '@/components/ui/Toasts/toaster';
-import { PropsWithChildren, Suspense } from 'react';
-import { getURL } from '@/utils/helpers';
-import 'styles/main.css';
+import { Inter as FontSans } from 'next/font/google';
+import localFont from 'next/font/local';
+
 import '@/styles/globals.css';
-import { marketingConfig } from '@/config/marketing';
+import { siteConfig } from '@/config/site';
+import { absoluteUrl, cn } from '@/lib/utils';
+import { Toaster } from '@/components/ui/toaster';
+import { Analytics } from '@/components/analytics';
 import { ThemeProvider } from '@/components/theme-provider';
 
-const meta = {
-  title: 'Next.js Subscription Starter',
-  description: 'Brought to you by Vercel, Stripe, and Supabase.',
-  cardImage: '/og.png',
-  robots: 'follow, index',
-  favicon: '/favicon.ico',
-  url: getURL()
-};
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans'
+});
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: meta.title,
-    description: meta.description,
-    referrer: 'origin-when-cross-origin',
-    keywords: ['Vercel', 'Supabase', 'Next.js', 'Stripe', 'Subscription'],
-    authors: [
-      { name: 'Crypto Policy DAO', url: 'https://CryptoPolicy.vercel.app/' }
-    ],
-    creator: 'CryptoPolicyDAO',
-    themeColor: [
-      { media: '(prefers-color-scheme: light)', color: 'white' },
-      { media: '(prefers-color-scheme: dark)', color: 'black' }
-    ],
-    publisher: 'Vercel',
-    robots: meta.robots,
-    icons: { icon: meta.favicon },
-    metadataBase: new URL(meta.url),
-    openGraph: {
-      url: meta.url,
-      title: meta.title,
-      description: meta.description,
-      images: [meta.cardImage],
-      type: 'website',
-      siteName: meta.title
-    },
-    twitter: {
-      card: 'summary_large_image',
-      site: '@Vercel',
-      creator: '@Vercel',
-      title: meta.title,
-      description: meta.description,
-      images: [meta.cardImage]
-    }
-  };
+// Font files can be colocated inside of `pages`
+const fontHeading = localFont({
+  src: '../assets/fonts/CalSans-SemiBold.woff2',
+  variable: '--font-heading'
+});
+
+interface RootLayoutProps {
+  children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: PropsWithChildren) {
-  return (
-    <div>
-      <header className=" z-40 bg-background container   ">
-        <div className="flex h-20 items-center justify-between py-6">
-          <MainNav items={marketingConfig.mainNav} />
-        </div>
-      </header>
-      <body className="bg-black loading">
-        <main
-          id="skip"
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
-        >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
+export const metadata = {
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`
+  },
+  description: siteConfig.description,
+  keywords: ['crypto', 'policy', 'DAO', 'web3', 'regulation'],
+  authors: [
+    {
+      name: 'Crypto Policy DAO',
+      url: 'https://CryptoPolicy.vercel.app'
+    }
+  ],
+  creator: 'CryptoPolicyDAO',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' }
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/logo.png`],
+    creator: '@CryptoPolicyDAO'
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png'
+  },
+  manifest: `${siteConfig.url}/site.webmanifest`
+};
 
-            <Footer />
-            <Suspense>
-              <Toaster />
-            </Suspense>
-          </ThemeProvider>
-        </main>
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable,
+          fontHeading.variable
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+          <Analytics />
+          <Toaster />
+        </ThemeProvider>
       </body>
-    </div>
+    </html>
   );
 }
