@@ -71,7 +71,6 @@
     "@vercel/analytics": "^1.0.0",
     "@vercel/og": "^0.0.21",
     "class-variance-authority": "^0.7.0",
-    "classnames": "^2.5.1",
     "clsx": "^2.1.0",
     "cmdk": "^0.1.22",
     "lucide-react": "^0.92.0",
